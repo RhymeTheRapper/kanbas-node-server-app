@@ -17,7 +17,7 @@ app.use(express.json());
 app.use(
     cors({
         credentials: true,
-        origin: process.env.NETLIFY_URL || "http://localhost:3000" || "https://a5--aquamarine-sorbet-831a43.netlify.app",
+        origin: process.env.NETLIFY_URL,
     })
 );
 console.log(process.env.NETLIFY_URL);
