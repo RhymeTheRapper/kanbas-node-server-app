@@ -20,7 +20,6 @@ app.use(
         origin: process.env.NETLIFY_URL,
     })
 );
-console.log(process.env.NETLIFY_URL);
 const sessionOptions = {
     secret: process.env.SESSION_SECRET || "kanbas",
     resave: false,
